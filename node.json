@@ -1,0 +1,16 @@
+{
+  "run_list": [ "recipe[postfix::default]","recipe[fail2ban]","recipe[supervisord]","recipe[spamassassin]","recipe[rsyslog]" ],
+  "postfix": {
+    "mail_type": "master",
+    "main": {
+      "mynetworks": "127.0.0.0/8",
+      "inet_interfaces": "all"
+    }
+  },
+  "fail2ban": {
+    "services": {
+      "ssh": { "enabled": "true", "port": "ssh", "filter": "sshd", "logpath": "/var/log/auth.log", "maxretry": "6" },
+      "smtp": { "enabled": "true", "port": "smtp", "filter": "smtp", "logpath": "/var/log/auth.log", "maxretry": "6" }
+    }
+  }
+}
