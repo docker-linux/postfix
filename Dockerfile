@@ -1,4 +1,4 @@
-FROM linux/chef-solo
+FROM linuxkonsult/chef-solo
 
 MAINTAINER Tom Eklöf tom@linux-konsult.com
 

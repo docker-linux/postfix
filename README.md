@@ -1,7 +1,7 @@
 Introduction
 ------------
 
-This image is based on the Trusted build **[linux/chef-solo][1]** which in turn is based on the **ubuntu** base image.
+This image is based on the Trusted build **[linuxkonsult/chef-solo][1]** which in turn is based on the **ubuntu** base image.
 
 The service is installed and configured with Chef. You can read [here][2] how to edit `/etc/chef/node.json` and run chef-solo to configure the service.
 
@@ -18,6 +18,6 @@ Bugs / Contributing
 Make contributions the usual way through GitHub, request changes and ask questions in comments below or email me directly at tom@linux-konsult.com.
 
 
-  [1]: https://index.docker.io/u/linux/chef-solo/
+  [1]: https://index.docker.io/u/linuxkonsult/chef-solo/
   [2]: https://github.com/hw-cookbooks/postgresql
   [3]: https://github.com/opscode-cookbooks/postfix
